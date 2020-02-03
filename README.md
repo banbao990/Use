@@ -7,5 +7,5 @@
 ## 2. git 使用
 [git-use](./git-use.md)
 
-## 3. [Latex](./Latex/Latex.md)
+## 3. [Latex](./Latex/README.md)
 
