@@ -9,3 +9,7 @@
 
 ## 3. [Latex](./Latex/README.md)
 
+## 4.notepad++ 插件
+
+### 1.[HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
+
