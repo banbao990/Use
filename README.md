@@ -5,11 +5,15 @@
 + 2.1 下载之后用Typora打开(需要点时间...)
 
 ## 2. git 使用
-[git-use](./git-use.md)
++ 2.1 [git-use](./git/git-use.md)
 
 ## 3. [Latex](./Latex/README.md)
 
 ## 4.notepad++ 插件
 
-### 1.[HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
++ 4.1 [HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
+
+## 5. FTP
+
++ 5.1 [基于WIN10的FTP搭建](./FTP/FTP-construct.md)
 
