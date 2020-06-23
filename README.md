@@ -9,6 +9,9 @@
 
 ## 3. [Latex](./Latex/README.md)
 
++ 花体
++ 上下标符号放在正上和正下方公式
+
 ## 4.notepad++ 插件
 
 + 4.1 [HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
@@ -16,4 +19,12 @@
 ## 5. FTP
 
 + 5.1 [基于WIN10的FTP搭建](./FTP/FTP-construct.md)
+
+## 6. [Typora](Typora/README.md)
+
++ 分页符
+
+## 7. [Win10](Win10/README.md)
+
++ 关闭开机自启
 
