@@ -144,10 +144,38 @@
 ## 7. UTF-16 
 
 + `Unicode` 的一种实现
++ `2/4` 个字节
+
+| Unicode编码(十六进制) | UTF-16 字节流(二进制) |
+| ------------------------- | ------------------------ |
+| 000000-00FFFF | xxxxxxxx xxxxxxxx |
+| 010000-10FFFF | 110110yy yyyyyyyy 110111xx xxxxxxxx |
+
++ **代理**（**特殊字符**）：**保留代码点，不表示任意字符**
++ `110110xx xxxxxxxx`（`0xd800` - `0xdbff`）为高位代理（`High Surrogate`）
+    + `110111xx xxxxxxxx`（`0xdc00` - `0xdfff`） 为低位代理（`Low Surrogate`）
+    
++ 转化
+    + 如果代码点位于 `0x000000` - `0x00ffff`，直接进行二进制编码，位数不够的左边补 `0`
+    + 如果代码点位于 `0x010000` - `0x10ffff`，则：
+        + 代码点减去 `0x10000`，会得到一个位于 `0x000000` 和 `0x0fffff` 之间的数字
+        + 这个数字转换为 12 位二进制数，位数不够的，左边充 0，记作：`yyyy yyyy yyxx xxxx xxxx`。
+        + 取出 `yy yyyyyyyy`，并加上 `11011000 00000000`(`0xD800`)，得到高位代理
+        + 取出 `xx xxxxxxxx`，并加上 `11011100 00000000`(`0xDC00`)，得到低位代理
+        + 高位代理和低位代理相连，得到 `110110yy yyyyyyyy 110111xx xxxxxxxx`
 
 
 
-## 8. 代码转换
+## 8. UTF-32 
 
-+ 基于 `window` 小端机
-+ 
++ `Unicode` 的一种实现
++ `4` 个字节
++ 不够高位补 `0`
+
+| Unicode编码(十六进制) | UTF-16 字节流(二进制) |
+| ------------------------- | ------------------------ |
+| 000000-10FFFF | xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx|
+
+## 9. 代码转换
+
++ [FormatChange.java](https://github.com/banbao990/Java/blob/master/File/FormatChange/FormatChange.java)
