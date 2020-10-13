@@ -14,3 +14,8 @@
   + `\mathop{\theta}\limits_{i=1}^{n}`
   + $\mathop{\theta}\limits_{i=1}^{n}$
 
+
+
+## 3. Latex 符号查询表
+
++ [TeXRefCard.v1.5.pdf](material/TeXRefCard.v1.5.pdf)

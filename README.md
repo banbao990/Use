@@ -1,64 +1,47 @@
 # Use
 ## 1. Github
-### 1.1 支持 Latex
-
-+ `Google Chrome` 安装插件 [github-with-mathjax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima)
-+ 下载之后用 `Typora` 打开(需要点时间...)
++ [Github-use](Github.md)
 
 
 
-### 1.2 下载单个文件夹
+## 2. git
 
-+ 使用 `SVN`
-+ 下载 [SVN](https://tortoisesvn.net/downloads.zh.html)
-+ 步骤（此处使用版本为 ` 1.14.0(64bit)` ）
-    + 在目标文件夹中右键打开 `SVN Checkout`
-    + `URL of resposity:` 中输入需要下载的文件夹
-        + 注意这里要修改路径：`  /tree/master/` 换成 `/trunk/ `
-        + 举个例子
-            + 原始文件夹：`https://github.com/banbao990/Java/tree/master/Game/2048`
-            + 修改后文件夹：`https://github.com/banbao990/Java/truck/Game/2048`
-    + `Checkout directory:` 下载到本地对应的文件夹
++ [git-use](git-use.md)
 
 
 
-## 2. git 使用
+## 3. Latex
 
-+ [git-use](./git/git-use.md)
-
-
-
-## 3. [Latex](./Latex/README.md)
-
-+ 花体
-+ 上下标符号放在正上和正下方公式
++ [Latex-Kit](Latex.md)
 
 
 
 ## 4.notepad++ 插件
 
-+ 4.1 [HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
++ [HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
 
 
 
 ## 5. FTP
 
-+ 5.1 [基于WIN10的FTP搭建](./FTP/FTP-construct.md)
++ [基于WIN10的FTP搭建](FTP-construct-Win10.md)
 
 
 
-## 6. [Typora](Typora/README.md)
+## 6. Typora
 
-+ 分页符
-
-
-
-## 7. [Win10](Win10/README.md)
-
-+ 关闭开机自启
++ [Typora-Kit](Typora.md)
 
 
 
-## 8. [Kit](Kit/README.md)
+## 7. Win10
 
-+ 编码格式相关说明
++ [Win10-Kit](Win10-Kit.md)
+
+
+
+## 8. 编码格式相关说明
+
++ [CodingFormat.md](CodingFormat.md)
++ `ANSI`，`ASCII`，`GBK`，`GB2312`，`UTF-8`，`UTF-16`，`unicode`
+
