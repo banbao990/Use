@@ -1,5 +1,10 @@
 # Use
+[TOC]
+
+---
+
 ## 1. Github
+
 + [Github-use](md/Github.md)
 
 
@@ -44,4 +49,10 @@
 
 + [CodingFormat.md](md/CodingFormat.md)
 + `ANSI`，`ASCII`，`GBK`，`GB2312`，`UTF-8`，`UTF-16`，`unicode`
+
+
+
+## 9. OpenCV
+
++ `Win10` - `VS2017`- `OpenCV` - `C/C++` [配置](md/opencv.md)
 
