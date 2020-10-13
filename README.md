@@ -56,3 +56,20 @@
 
 + `Win10` - `VS2017`- `OpenCV` - `C/C++` [配置](md/opencv.md)
 
+
+
+## 10. Google Chrome
+
++ [GoogleChrome-Kit](md/Google-Chrome.md)
+
+
+
+## 11. VS Code
+
++ [VSCode-Kit](md/VSCode.md)
+
+
+
+## 12. Node.js
+
++ [Node.js-Kit](md/Node.js.md)
