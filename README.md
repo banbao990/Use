@@ -1,18 +1,18 @@
 # Use
 ## 1. Github
-+ [Github-use](Github.md)
++ [Github-use](md/Github.md)
 
 
 
 ## 2. git
 
-+ [git-use](git-use.md)
++ [git-use](md/git-use.md)
 
 
 
 ## 3. Latex
 
-+ [Latex-Kit](Latex.md)
++ [Latex-Kit](md/Latex.md)
 
 
 
@@ -24,24 +24,24 @@
 
 ## 5. FTP
 
-+ [基于WIN10的FTP搭建](FTP-construct-Win10.md)
++ [基于WIN10的FTP搭建](md/FTP-construct-Win10.md)
 
 
 
 ## 6. Typora
 
-+ [Typora-Kit](Typora.md)
++ [Typora-Kit](md/Typora.md)
 
 
 
 ## 7. Win10
 
-+ [Win10-Kit](Win10-Kit.md)
++ [Win10-Kit](md/Win10-Kit.md)
 
 
 
 ## 8. 编码格式相关说明
 
-+ [CodingFormat.md](CodingFormat.md)
++ [CodingFormat.md](md/CodingFormat.md)
 + `ANSI`，`ASCII`，`GBK`，`GB2312`，`UTF-8`，`UTF-16`，`unicode`
 
