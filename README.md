@@ -54,7 +54,10 @@
 
 ## 9. OpenCV
 
-+ `Win10` - `VS2017`- `OpenCV` - `C/C++` [配置](md/opencv.md)
++ `Win10` - `VS2017`- `OpenCV` - `C/C++` [配置](md/opencv-VS2017.md)
++ `Win10` - `VSCode`- `OpenCV` - `C/C++`
+    +  [mingw(未完成)](md/opencv-VSCode-mingw.md)
+    +  [MSVC](md/opencv-VSCode-MSVC.md)
 
 
 
@@ -67,9 +70,17 @@
 ## 11. VS Code
 
 + [VSCode-Kit](md/VSCode.md)
++ 配置 `C/C++` 编译环境（`mingw-w64`）[Kit](md/vscode-c-c++.md)
++ 配置 `C/C++` 编译环境（`MSVC`）[Kit](md/vscode-c-c++-MSVC.md)
 
 
 
 ## 12. Node.js
 
 + [Node.js-Kit](md/Node.js.md)
+
+
+
+## 13. Visual Studio
+
++ [2017](md/VS2017.md)
