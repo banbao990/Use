@@ -54,9 +54,9 @@
 
 ```txt
 Where is the source code:
- 	D:\installed-application\opencv\opencv-src\opencv-4.4.0
+    D:\installed-application\opencv\opencv-src\opencv-4.4.0
 Where to build the binaries: 
-	D:\installed-application\opencv\opencv-built-mingw
+    D:\installed-application\opencv\opencv-built-mingw
 ```
 
 
@@ -65,15 +65,15 @@ Where to build the binaries:
 
 ```txt
 Specify the generator for this project: 
-	MinGW Makefiles
+    MinGW Makefiles
 Specify native compilers
 
 Next
 
 Compilers C:
-	D:/installed-application/mingw64/bin/gcc.exe
+    D:/installed-application/mingw64/bin/gcc.exe
 Compilers C++:
-	D:/installed-application/mingw64/bin/g++.exe
+    D:/installed-application/mingw64/bin/g++.exe
 
 Finish
 ```
@@ -123,7 +123,7 @@ Finish
 gcc: error: long: No such file or directory
 
 (回到 1.1.3 mingw-gui, generate)
-	OPENCV_ENABLE_ALLOCATOR_STATS: false
+    OPENCV_ENABLE_ALLOCATOR_STATS: false
 ```
 
 + 弃坑了（搞不动）
