@@ -58,6 +58,7 @@
 + `Win10` - `VSCode`- `OpenCV` - `C/C++`
     +  [mingw(未完成)](md/opencv-VSCode-mingw.md)
     +  [MSVC](md/opencv-VSCode-MSVC.md)
++  `python3.7` [Kit](md/py-vscode-anaconda.md)
 
 
 
@@ -72,6 +73,7 @@
 + [VSCode-Kit](md/VSCode.md)
 + 配置 `C/C++` 编译环境（`mingw-w64`）[Kit](md/vscode-c-c++.md)
 + 配置 `C/C++` 编译环境（`MSVC`）[Kit](md/vscode-c-c++-MSVC.md)
++ 配置 `python` 环境（`Anaconda`）[Kit](md/py-vscode-anaconda.md)
 
 
 
