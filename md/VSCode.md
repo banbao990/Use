@@ -21,3 +21,24 @@
 "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4}"
 ```
 
+
+
+## 3. 支持 js 自动补全
+
++ 下载 `typings`
+
+```powershell
+npm install -g typings
+```
+
++ 添加配置文件 `jsconfig.json`
+
+```json
+{
+    "exclude": ["node_modules"],
+    "typeAcquisition": {
+        "include": ["d3"]
+    }
+}
+```
+
