@@ -86,10 +86,10 @@
 ## 13. Visual Studio
 
 + [2017](md/VS2017.md)
++ 关于 VS2017 的一些参数 [解释](md/VS2017-options.md)
 
 
 
 ## 14. Open GL
 
 + `win10` - `VS2017` - `OpenGL`[配置](md/OpenGL-VS2017.md)
-
