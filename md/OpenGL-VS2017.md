@@ -56,7 +56,7 @@ Options          ->   Generate a loader
 
 + 配置属性：项目 `->` 属性
 
-    + 配置：**活动(Debug) **
+    + 配置：**活动(Debug)**
 
     + 平台：`WIN32`
 
