@@ -9,6 +9,12 @@
 
 
 
+## 0. 一个简单的配置
+
++ [简单配置](md/VS2017-options.md)
+
+
+
 ## 1. 下载库
 
 ### 1.1 下载 GLFW 库
@@ -91,7 +97,7 @@ Options          ->   Generate a loader
 + 新建源文件测试
 + https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/1.2.hello_window_clear/hello_window_clear.cpp
 
-​
+
 
 ## 4. 参考资料
 
