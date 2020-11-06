@@ -122,3 +122,9 @@ D:\TEMP>fc test test.png
 FC: 找不到差异
 ```
 
+
+
+## 3. 安装字体
+
++ 复制字体文件到系统盘的文件夹即可 `C:\Windows\Fonts`
+
