@@ -159,7 +159,7 @@ conda install scipy
 
 ```python
 import cv2 as cv
-print(cv2.__version__) # 4.4.0 => OK
+print(cv.__version__) # 4.4.0 => OK
 ```
 
 
