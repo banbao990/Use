@@ -20,3 +20,15 @@
             + 修改后文件夹：`https://github.com/banbao990/Java/truck/Game/2048`
     + `Checkout directory:` 下载到本地对应的文件夹
 
+
+
+### 1.3 合作
+
++ 选中需要共同合作的仓库 repository
++ 选择 setting
++ 选择 manage acesss
++ 选择 Invite a collaborator
+    + 邀请别人
++ 被邀请方会收到邮件邀请
+    + 接收后会有 **push** 的权限
+    +  You now have **push** access to the xxx/xxx repository
