@@ -3,9 +3,12 @@
 
 ---
 
+
+
 ## 1. Github
 
 + [Github-use](md/Github.md)
++ 搭建 Github 静态托管[网页](md/Github.website.md)
 
 
 
@@ -21,7 +24,7 @@
 
 
 
-## 4.notepad++ 插件
+## 4. notepad++ 插件
 
 + [HexEditor](https://github.com/chcg/NPP_HexEdit/releases)
 
