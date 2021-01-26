@@ -263,6 +263,10 @@ favicon:
   # android_manifest: /manifest.json
 ```
 
++ 每次执行 *hexo clean* 之后重新执行 *hexo g* 生成文件时会把这些图片文件删除
++ 解决方案如下
+    + 将这些图片放置到 `themes/nexT/source/images` 文件夹下，这样便可以通过 *hexo g* 生成
+
 
 
 ##### [5] 访问次数
