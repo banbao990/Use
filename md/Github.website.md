@@ -286,6 +286,54 @@ busuanzi_count:
 
 
 
+#### (3) 其他细节
+
+##### 修改 p 的 margin
+
++ 文件：`themes\nexT\source\css\_common\scaffolding\base.styl`
+
+```css
+p {
+  margin: 0 0 20px;
+}
+```
+
+```css
+p {
+  margin: 0;
+}
+```
+
+
+
+##### **mathjax** 显示不完全
+
++ 打开文件 `\themes\nexT\source\css\_common\components\third-party\math.styl`
+
+```css
+mjx-container[jax="CHTML"][display="true"], .has-jax {
+  /* overflow: auto hidden; */
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+```
+
+
+
+##### latex 换行问题
+
++ 需要在 latex 中书写 `\\\\` 才表示 **换行**
++ 换个渲染引擎
+
+```shell
+npm uninstall hexo-renderer-marked --save
+npm install hexo-renderer-pandoc --save
+```
+
+
+
 ### 4.4 添加分类模块
 
 ```bash
@@ -346,14 +394,32 @@ else {
 }
 ```
 
+
+
 ### 4.6 github 挂载和本地不一致
 
-```she
++ css/js 等问题
+
+```shell
 hexo clean
 hexo d -g
 ```
 
 + 注意头像文件等的保存
+
+
+
+### 4.7 将文件的路径转变为数字
+
++ 方便引用
++ https://github.com/Rozbo/hexo-abbrlink
++ 安装插件 hexo-abbrlink
+
+```shell
+npm install hexo-abbrlink --save
+```
+
+
 
 
 
