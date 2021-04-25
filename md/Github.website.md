@@ -421,6 +421,55 @@ npm install hexo-abbrlink --save
 
 
 
+### 4.8 配置 mermaid
+
++ 下载安装插件 hexo-filter-mermaid-diagrams
+
+```bash
+npm install hexo-filter-mermaid-diagrams --save
+```
+
++ 修改配置文件 *_config.yml*（根目录下的文件）
+    + 在最后添加（因为我的部分没有 mermaid 部分）
+
+```yaml
+# mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
+```
+
++ 修改配置文件 *_config.yml*（主题目录下的文件）
+    + *themes/nexT/_config.yml*
+    + 将 mermaid 模块下的 enable 修改为 true
+
+```yaml
+# Mermaid tag
+mermaid:
+  enable: true # 从 false 修改为 true
+  # Available themes: default | dark | forest | neutral
+  theme: forest
+```
+
++ 修改 js 文件
+    + *themes/nexT/layout/_partials/footer.njk*
+    + 在文件最后添加如下代码
+
+```txt
+{% if (theme.mermaid.enable)  %}
+  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+{% endif %}
+```
+
+
+
 
 
 ## 5. 参考资料
@@ -430,3 +479,4 @@ npm install hexo-abbrlink --save
 + https://www.cnblogs.com/thanksblog/p/12900165.html
 + http://theme-next.iissnan.com/getting-started.html
 + https://www.jianshu.com/p/3a05351a37dc
++ https://tyloafer.github.io/posts/7790/

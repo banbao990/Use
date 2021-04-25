@@ -97,3 +97,10 @@
 
 + `win10` - `VS2017` - `OpenGL`[配置](md/OpenGL-VS2017.md)
 + 一些其他的[配置](https://github.com/banbao990/OpenGL/)
+
+
+
+## 15. mitsuba 0.6
+
++ mitsuba0.6 [配置](md/mitsuba0.6.md)
+
