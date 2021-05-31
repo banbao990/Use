@@ -1,5 +1,13 @@
 # mitsuba0.6 配置
 
+## 环境
+
++ Win10
++ VS2017
++ mitsuba 0.6
+
+
+
 ## 下载源代码
 
 ```shell
@@ -8,20 +16,38 @@ git clone --recursive https://github.com/mitsuba-renderer/mitsuba.git
 
 
 
-## 开始编译
+## 说明
 
 + 使用 `mitsuba-msvc2017.sln`
-    + 最终使用了命令行编译
-    + 可能需要配置一些 `msvc` 的环境变量
+    + 也没问题，需要在环境变量中把  python 的路径修改为下面配置的 2.7，同时把 scons 加入环境变量
+    + 重启 `mitsuba-msvc2017.sln` 即可
++ **最终使用了命令行编译**，但是使用了 MSVC 的工具
+    + 需要配置一些 `msvc` 的环境变量，如果你没有配置的话
 
 
 
+## required build dependency
+
++ 需要下载一些依赖库
+    + [下载链接](https://github.com/mitsuba-renderer/dependencies_win64)
++ 解压到 `mitsuba` 文件夹下，重命名为 `dependencies`
 
 
-### 运行 python 文件报错
 
-+ `print` 语法问题
-    + 原来使用的版本是 `py2`
+## configuration
+
++ 把 build 文件夹下的 `config-win64-msvc2017.py` 复制到 mitsuba 根目录下，重命名为 `config.py`
+
+```shell
+copy build\config-win64-msvc2017.py .\config.py
+```
+
+
+
+## 安装一个 python2.7 的环境
+
++ `config.py` 中使用的是 2.7 的语法
+    + `print` 语法
 + 利用 anaconda 创建一个 2.7 的环境
 
 ```shell
@@ -30,7 +56,7 @@ conda create -n py27 python=2.7
 
 
 
-### 未安装 scons
+## 安装 scons
 
 + 利用提供的 scons 2.5.1
     + https://github.com/mitsuba-renderer/dependencies_win64
@@ -42,7 +68,7 @@ python setup.py install
 
 
 
-### UnicodeDecodeError
+## UnicodeDecodeError
 
 + UnicodeDecodeError: 'ascii' codec can't decode byte 0xc9 in position 9: ordinal not in range(128):
 + `scons` 在编译时候会检查所有的环境变量（不仅仅是 path），如果环境变量中含有非 ascii 码的字符就会报错退出
@@ -50,22 +76,24 @@ python setup.py install
 
 
 
-### configuration
+## 运行编译程序
 
-+ 把 build 文件夹下的 `config-win64-msvc2017.py` 复制成 `config.py`
++ 在 mitsuba 根目录下运行如下命令即可顺利编译
+    + 需要配置好 MSVC 的环境变量
+
+```shell
+activate py27
+scons -j20
+```
+
++ 或者配置好 py27/scons 的环境变量使用 `mitsuba-msvc2017.sln` 编译
 
 
 
-### required build dependency
+## Qt
 
-+ 下载链接：https://github.com/mitsuba-renderer/dependencies_win64
-+ 解压到 `mitsuba` 文件夹下，重命名为 `dependencies`
-
-
-
-### Qt
-
-+ 到此位置应该能够运行 `mitsuba.exe` 了，但是还是不能运行 `misgui.exe`
++ 到此为止应该能够运行 `mitsuba.exe` 了，但是还是不能运行 `misgui.exe`
+    + dist 目录下
 + 可以从 `dependencies\include\QtCore` 中看到 Qt 的版本是 `5.9.1` ，去官网下载对应版本
 + https://download.qt.io/archive/qt/5.9/5.9.1/
 + 安装的时候除了默认选项之外，我把所有的 `VS2017` 相关的都加上了
@@ -85,7 +113,7 @@ Qt5XmlPatterns.dll
 
 
 
-### 大功告成
+## 大功告成
 
 
 

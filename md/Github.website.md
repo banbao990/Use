@@ -11,8 +11,8 @@
 + 基于 Hexo 进行搭建
     + https://hexo.io/zh-cn/
 + 需要的组件
-    + *Git*
-    + *node.js*
+    + `Git`
+    + `node.js`
 + 我的版本信息
 
 |  部件   |             版本             |
@@ -77,14 +77,14 @@ hexo server -p 5000
 
 ## 3. 部署 Hexo 到 GitHub Pages
 
-+ 安装 *hexo-deployer-git*
++ 安装 `hexo-deployer-git`
     + 这里是安装在局部
 
 ```shell
 npm install hexo-deployer-git --save
 ```
 
-+  修改配置文件 *_config.yml* 的 *Deployment* 部分
++  修改配置文件 `_config.yml` 的 `Deployment` 部分
 
 ```yaml
 # Deployment
@@ -119,19 +119,19 @@ hexo d
 hexo new "New.File"
 ```
 
-+ 然后进入文件夹 *source/_posts* 编辑即可
++ 然后进入文件夹 `source/_posts` 编辑即可
 
 
 
 ### 4.2 修改主题
 
-+ 例如 *NexT*
++ 例如 `NexT`
 
 ```shell
 git clone https://github.com/next-theme/hexo-theme-next.git themes/nexT
 ```
 
-+ 修改配置文件 *_config.yml* 的 *Extensions* 部分
++ 修改配置文件 `_config.yml` 的 `Extensions` 部分
 
 ```yaml
 # Extensions
@@ -147,9 +147,9 @@ theme: landscape
 theme: nexT
 ```
 
-+ 支持 *Latex*
++ 支持 `Latex`
 
-    + 修改 *nexT* 的主题的配置文件 *_config.yml*
+    + 修改 `nexT` 的主题的配置文件 `_config.yml`
 
     ```yaml
     math:
@@ -182,7 +182,7 @@ theme: nexT
         copy_tex: false
     ```
 
-    + 然后在需要进行渲染的 *markdown* 文件开头加上 *mathjax: true*
+    + 然后在需要进行渲染的 `markdown` 文件开头加上 `mathjax: true`
 
 
 
@@ -190,7 +190,7 @@ theme: nexT
 
 #### (1) 网页配置文件
 
-+  *_config.yml*
++  `_config.yml`
 
 ##### [1] 主题
 
@@ -206,7 +206,7 @@ scheme: Gemini
 
 #### (2) nexT 主题配置文件
 
-+  *themes/nexT/_config.yml*
++  `themes/nexT/_config.yml`
 
 ##### [1] 菜单
 
@@ -263,9 +263,9 @@ favicon:
   # android_manifest: /manifest.json
 ```
 
-+ 每次执行 *hexo clean* 之后重新执行 *hexo g* 生成文件时会把这些图片文件删除
++ 每次执行 `hexo clean` 之后重新执行 `hexo g` 生成文件时会把这些图片文件删除
 + 解决方案如下
-    + 将这些图片放置到 `themes/nexT/source/images` 文件夹下，这样便可以通过 *hexo g* 生成
+    + 将这些图片放置到 `themes/nexT/source/images` 文件夹下，这样便可以通过 `hexo g` 生成
 
 
 
@@ -340,15 +340,15 @@ npm install hexo-renderer-pandoc --save
 hexo new page tags
 ```
 
-+ 此时会在 *source/tags* 文件夹下生成一个 *index.md* 文件
++ 此时会在 `source/tags` 文件夹下生成一个 `index.md` 文件
 + 打开这个文件，顶部加上一句
 
 ```markdown
 type: "tags"
 ```
 
-+ 按照 *(2)->[1]* 设置显示 *tags* 标签即可
-+ 添加 *categories* 模块
++ 按照 `(2)->[1]` 设置显示 `tags` 标签即可
++ 添加 `categories` 模块
 
 ```markdown
 type: "categories"
@@ -398,7 +398,7 @@ else {
 
 ### 4.6 github 挂载和本地不一致
 
-+ css/js 等问题
++ `css/js` 等问题
 
 ```shell
 hexo clean
@@ -413,7 +413,7 @@ hexo d -g
 
 + 方便引用
 + https://github.com/Rozbo/hexo-abbrlink
-+ 安装插件 hexo-abbrlink
++ 安装插件 `hexo-abbrlink`
 
 ```shell
 npm install hexo-abbrlink --save
@@ -423,14 +423,14 @@ npm install hexo-abbrlink --save
 
 ### 4.8 配置 mermaid
 
-+ 下载安装插件 hexo-filter-mermaid-diagrams
++ 下载安装插件 `hexo-filter-mermaid-diagrams`
 
 ```bash
 npm install hexo-filter-mermaid-diagrams --save
 ```
 
-+ 修改配置文件 *_config.yml*（根目录下的文件）
-    + 在最后添加（因为我的部分没有 mermaid 部分）
++ 修改配置文件 `_config.yml`（根目录下的文件）
+    + 在最后添加（因为我的部分没有 `mermaid` 部分）
 
 ```yaml
 # mermaid chart
@@ -441,9 +441,9 @@ mermaid: ## mermaid url https://github.com/knsv/mermaid
     #startOnload: true  // default true
 ```
 
-+ 修改配置文件 *_config.yml*（主题目录下的文件）
-    + *themes/nexT/_config.yml*
-    + 将 mermaid 模块下的 enable 修改为 true
++ 修改配置文件 `_config.yml`（主题目录下的文件）
+    + `themes/nexT/_config.yml`
+    + 将 `mermaid` 模块下的 `enable` 修改为 `true`
 
 ```yaml
 # Mermaid tag
@@ -454,7 +454,7 @@ mermaid:
 ```
 
 + 修改 js 文件
-    + *themes/nexT/layout/_partials/footer.njk*
+    + `themes/nexT/layout/_partials/footer.njk`
     + 在文件最后添加如下代码
 
 ```txt
@@ -470,6 +470,45 @@ mermaid:
 
 
 
+### 4.9 搜索功能
+
++ 安装插件
+
+```bash
+npm install hexo-generator-searchdb --save
+```
+
++ 在全局配置文件 `_config.yml` 中增加如下项
+
+```yaml
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+
++ 修改主题文件的配置，我使用的是 `nexT`
++ `hexo` 主题配置文件 `\themes\nexT\config.yml`，修改 `local_search` 的`enable` 为 `true`
+
+```yaml
+# Local Search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false
+```
+
+
+
 
 
 ## 5. 参考资料
@@ -480,3 +519,4 @@ mermaid:
 + http://theme-next.iissnan.com/getting-started.html
 + https://www.jianshu.com/p/3a05351a37dc
 + https://tyloafer.github.io/posts/7790/
++ [搜索功能](https://huangweicai.github.io/2019/01/12/Hexo%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)
