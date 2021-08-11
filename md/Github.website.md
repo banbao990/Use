@@ -509,6 +509,20 @@ local_search:
 
 
 
+### 4.10 某个文件夹下的 html 文件不渲染
+
++ 个目录下的 `_config.yml` 文件，修改内容
+
+```yaml
+skip_render: 
+  - utils/**/*
+  - resources/**/*
+  - libs/**/*
+  - kits/**/*
+```
+
+
+
 
 
 ## 5. 参考资料
