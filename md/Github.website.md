@@ -511,7 +511,7 @@ local_search:
 
 ### 4.10 某个文件夹下的 html 文件不渲染
 
-+ 个目录下的 `_config.yml` 文件，修改内容
++ 根目录下的 `_config.yml` 文件，修改内容
 
 ```yaml
 skip_render: 
@@ -522,6 +522,30 @@ skip_render:
 ```
 
 
+
+### 4.11 忽略某些文件夹下文件
+
++ 根目录下的 `_config.yml` 文件，修改内容
+
+```yaml
+exclude:
+  - kits/**/*.class
+```
+
+
+
+### 4.12 LF 替换为 CRLF 刷屏
+
+```txt
+warning: LF will be replaced by CRLF in page/3/index.html.
+The file will have its original line endings in your working directory
+```
+
++ 以上信息刷屏
+
+```cmd
+git config --global core.autocrlf false
+```
 
 
 
@@ -534,3 +558,4 @@ skip_render:
 + https://www.jianshu.com/p/3a05351a37dc
 + https://tyloafer.github.io/posts/7790/
 + [搜索功能](https://huangweicai.github.io/2019/01/12/Hexo%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)
++ [Hexo Git部署警告"warning： LF will be replaced by CRLF"的去除方法](https://gaomf.cn/2017/01/13/Hexo_Git_CRLF/)
